@@ -5,7 +5,7 @@ import nave from '../assets/nave.png'
 export default function Main(){
 
 const [modal, setModal] = useState('0')
-const [topBotton, setTopBotton]= useState('97vh')
+const [topBotton, setTopBotton]= useState('87vh')
 const [naveRotate, setnaveRotate]= useState('rotate(0deg)')
 
     return (
@@ -33,11 +33,12 @@ const [naveRotate, setnaveRotate]= useState('rotate(0deg)')
                 <img src="https://scontent.fjdo12-1.fna.fbcdn.net/v/t1.18169-9/10982749_864587906947426_2964812838055311885_n.jpg?stp=c0.23.206.206a_dst-jpg_p206x206&_nc_cat=100&ccb=1-7&_nc_sid=da31f3&_nc_ohc=ceOhKco0YkQAX8Q7IY3&_nc_ht=scontent.fjdo12-1.fna&oh=00_AfD0tzPHyMfpmbpvkfvVGgkQWLvAN5EoG6IwEZExH-g9dA&oe=646B5301" alt="" />
             </Conteiner_right>
 
-            <Article modal={modal}>
-
-            </Article>
-
-           <Span topBotto={topBotton} nave={nave} naveRotate={naveRotate}  onClick={()=> modal === '0' ? ` ${setnaveRotate('rotate(180deg)')} ${ setTopBotton('18vh')}  ${ setModal('calc(100vh - 8.9vh)')}  ` : ` ${setnaveRotate('rotate(0deg)')}  ${ setTopBotton('97vh')}  ${setModal('0')}   `}></Span>
+           
+           
+           <Article modal={modal}>
+            
+          </Article>
+          <Span topBotto={topBotton} nave={nave} naveRotate={naveRotate}  onClick={()=> modal === '0' ? ` ${setnaveRotate('rotate(180deg)')} ${ setTopBotton('6vh')}  ${ setModal('calc(100vh - 10.3vh)')}  ` : ` ${setnaveRotate('rotate(0deg)')}  ${ setTopBotton('87vh')}  ${setModal('0')}   `}></Span> 
         </Mains>
     )
 }

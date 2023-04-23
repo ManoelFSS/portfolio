@@ -7,8 +7,10 @@ export const Mains = styled.main`
     height: calc(100vh - 10vh);
     flex-wrap: wrap-reverse;
     justify-content: center;
-    overflow: hidden;
     padding-top:10px ;
+    position: relative;
+   
+
 `;
 
 export const Conteiner_left = styled.section`
@@ -210,23 +212,20 @@ export const Article = styled.article`
     transition: all 1s;
 
     @media(max-width: 550px){  
-        bottom: -8vh;
+      
     }
   
 `;
 
 export const Span = styled.span`
     cursor: pointer;
-    position: absolute;
+    position:absolute;
     top: ${props=> props.topBotto};
     transition: all 1s;
     z-index: 9999;
     transform: translate(-50%, -50%) ;
-    
+   
 
-    &:hover{
-        color: #be5d02;
-    }
     
     &::after{
         content: '';
