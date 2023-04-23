@@ -9,7 +9,6 @@ export const Mains = styled.main`
     justify-content: center;
     overflow: hidden;
     padding-top:10px ;
-    border: solid red 3px;
 `;
 
 export const Conteiner_left = styled.section`
