@@ -211,7 +211,7 @@ export const Article = styled.article`
     transition: all 1s;
 
     @media(max-width: 550px){  
-        bottom: 0vh;
+        bottom: -3vh;
     }
   
 `;
