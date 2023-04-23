@@ -37,7 +37,7 @@ const [naveRotate, setnaveRotate]= useState('rotate(0deg)')
 
             </Article>
 
-           <Span topBotto={topBotton} nave={nave} naveRotate={naveRotate}  onClick={()=> modal === '0' ? ` ${setnaveRotate('rotate(180deg)')} ${ setTopBotton('18vh')}  ${ setModal('98vh')}  ` : ` ${setnaveRotate('rotate(0deg)')}  ${ setTopBotton('97vh')}  ${setModal('0')}   `}></Span>
+           <Span topBotto={topBotton} nave={nave} naveRotate={naveRotate}  onClick={()=> modal === '0' ? ` ${setnaveRotate('rotate(180deg)')} ${ setTopBotton('18vh')}  ${ setModal('calc(100vh - 10vh)')}  ` : ` ${setnaveRotate('rotate(0deg)')}  ${ setTopBotton('97vh')}  ${setModal('0')}   `}></Span>
         </Mains>
     )
 }
