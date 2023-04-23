@@ -209,7 +209,11 @@ export const Article = styled.article`
     height: ${(props)=> props.modal};
     background: #3a3a3a url(https://i.ytimg.com/vi/DRSbkYryPhA/maxresdefault.jpg) no-repeat center / cover;
     transition: all 1s;
-    z-index: 0;
+
+    @media(max-width: 550px){  
+        bottom: -6vh;
+    }
+  
 `;
 
 export const Span = styled.span`
@@ -248,9 +252,6 @@ export const Span = styled.span`
         100%{
             top: -46px;
         }
-    } 
-
-  
-            
+    }             
     
 `;

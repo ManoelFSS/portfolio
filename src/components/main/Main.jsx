@@ -4,7 +4,7 @@ import nave from '../assets/nave.png'
 
 export default function Main(){
 
-const [modal, setModal] = useState('calc(0vh - 10vh)')
+const [modal, setModal] = useState('0')
 const [topBotton, setTopBotton]= useState('97vh')
 const [naveRotate, setnaveRotate]= useState('rotate(0deg)')
 
@@ -37,7 +37,7 @@ const [naveRotate, setnaveRotate]= useState('rotate(0deg)')
 
             </Article>
 
-           <Span topBotto={topBotton} nave={nave} naveRotate={naveRotate}  onClick={()=> modal === 'calc(0vh - 10vh)' ? ` ${setnaveRotate('rotate(180deg)')} ${ setTopBotton('18vh')}  ${ setModal('calc(100vh - 10vh)')}  ` : ` ${setnaveRotate('rotate(0deg)')}  ${ setTopBotton('97vh')}  ${setModal('calc(0vh - 10vh)')}   `}></Span>
+           <Span topBotto={topBotton} nave={nave} naveRotate={naveRotate}  onClick={()=> modal === '0' ? ` ${setnaveRotate('rotate(180deg)')} ${ setTopBotton('18vh')}  ${ setModal('calc(100% - 10vh)')}  ` : ` ${setnaveRotate('rotate(0deg)')}  ${ setTopBotton('97vh')}  ${setModal('0')}   `}></Span>
         </Mains>
     )
 }
