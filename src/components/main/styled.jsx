@@ -161,7 +161,7 @@ export const Conteiner_left = styled.section`
             padding: 10px;
             margin-bottom: 40px;
             min-width:300px ;
-            border: solid yellow 2px;
+            
         }
         
         div:nth-child(2){
@@ -169,7 +169,6 @@ export const Conteiner_left = styled.section`
             justify-content:center;
             margin-bottom:50px;
             height: auto;
-            border: solid red px;
             margin-bottom:70px;
           
         }
@@ -218,7 +217,7 @@ export const Conteiner_right = styled.section`
         border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
     }
     @media(max-width: 860px){  
-       border: solid 1px red;
+   
        height: auto;
        img{
             height: auto;
