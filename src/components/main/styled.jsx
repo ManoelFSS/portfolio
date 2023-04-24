@@ -100,16 +100,16 @@ export const Conteiner_left = styled.section`
       
         a{
             display:flex;
-            height: 6vh;
-            width: 6vh;
+            height: 5vh;
+            width: 5vh;
             background-color: #9e4c00;
             border-radius: 50%;
             transition: all 0.3s;
         }
 
         a:nth-child(3){
-            height: 8vh;
-            width: 8vh;
+            height: 7vh;
+            width: 7vh;
             margin-top: -8px;
             
         } 
@@ -236,7 +236,7 @@ export const Article = styled.article`
     height: ${(props)=> props.modal};
     background: #3a3a3a url(https://i.ytimg.com/vi/DRSbkYryPhA/maxresdefault.jpg) no-repeat center / cover;
     transition: all 1s;
-
+    z-index: 1;
     @media(max-width: 550px){  
       
     }
@@ -250,7 +250,7 @@ export const Span = styled.span`
     transition: all 1s;
     z-index: 9999;
     transform: translate(-50%, -50%) ;
-   
+   z-index: 1;
 
     
     &::after{
@@ -266,7 +266,7 @@ export const Span = styled.span`
         transition: all 1s 1s;
         animation: anima 0.3s  alternate-reverse infinite;
         left: -24px;
-        
+       
     }
 
     @keyframes anima {

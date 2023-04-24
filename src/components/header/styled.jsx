@@ -14,7 +14,7 @@ export const Headers = styled.header`
         font-size: clamp(1vw,4vw + 2vw,3em);
         padding: 10px;
         font-family: 'Stalinist One';
-        
+      
       
     }
 
@@ -57,13 +57,36 @@ export const Headers = styled.header`
 
     @media(max-width:535px){
 
-        justify-content: space-between;
+        gap: 200px;
 
         h3{
             font-size: clamp(1vw,4vw + 2vw,2em)
         };
+
+        ul{
+            width: 100%;
+            display: block;
+        }
+        li {
+            display: flex;
+            font-size: clamp(1vw,4vw + 2vw,1.8em);
+            width:100%;
+            justify-content: center;
+            margin-top: 15px;
+        }
         nav{
-            display: none;
+            display:flex;
+            width: 50%;
+            height:100vh ;
+            justify-content: center ;
+            padding-top: 100px;
+            position: fixed;
+            right:-50%;
+            transition: all 0.4s;
+            box-shadow: -3px 0px 24px #000;
+            top: 0;
+            background-color: #969696e1;
+            z-index: 3;
         }
     }
 
@@ -100,4 +123,20 @@ export  const Span = styled.span`
             box-shadow: 2px 2px 5px #000, 0px 0px 10px #ff7700, 0px 0px 30px #ff8800cc ;
         
         }
+`;
+
+
+export const Menu = styled.span`
+    display: none;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    background:#1f1f1f url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTA6Y7-IAzXhJ8Rox7Q6O6OtjHSjahCtoeNmODGITFQbwrICoL) no-repeat center / 102% 102%;
+
+    @media(max-width:535px){
+        display:block;
+        position: absolute;
+        right:20px;
+        z-index: 4;
+    }
 `;
