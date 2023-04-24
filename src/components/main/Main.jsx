@@ -5,7 +5,7 @@ import nave from '../assets/nave.png'
 export default function Main(){
 
 const [modal, setModal] = useState('0')
-const [topBotton, setTopBotton]= useState('87vh')
+const [topBotton, setTopBotton]= useState('89vh')
 const [naveRotate, setnaveRotate]= useState('rotate(0deg)')
 
     return (

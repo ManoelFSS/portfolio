@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const Headers = styled.header`
 
-    height: 10vh;
+    min-height: 10vh;
     width: 100%;
     display: flex;
     border-bottom: solid 2px #FF7A00;
@@ -49,6 +49,10 @@ export const Headers = styled.header`
 
     .ativo{
         color: #FF7A00;
+    }
+
+    @media(max-width: 860px){  
+     
     }
 
     @media(max-width:535px){

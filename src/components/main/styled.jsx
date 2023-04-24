@@ -7,7 +7,7 @@ export const Mains = styled.main`
     height: calc(100vh - 10vh);
     flex-wrap: wrap-reverse;
     justify-content: center;
-    padding-top:10px ;
+    padding:0px 20px ;
     position: relative;
    
 
@@ -17,6 +17,7 @@ export const Conteiner_left = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
  
 
     h1{
@@ -68,7 +69,8 @@ export const Conteiner_left = styled.section`
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 200px;
+            max-width: 200px;
+            min-width:170px;
             height: 40px;
             border:solid 1px #b65903 ;
             background-color: #b65903;
@@ -90,24 +92,26 @@ export const Conteiner_left = styled.section`
     div:nth-child(2){
         align-items: start;
         justify-content: left;
-        margin-left:95px;
-        gap: 3vh;
+       
+        gap: 5vh;
         width: 100%;
         height: 30vh;
       
+      
         a{
             display:flex;
-            height: 4vh;
-            width: 4vh;
+            height: 6vh;
+            width: 6vh;
             background-color: #9e4c00;
             border-radius: 50%;
             transition: all 0.3s;
         }
 
         a:nth-child(3){
-            height: 6vh;
-            width: 6vh;
-            margin-top: -10px;
+            height: 8vh;
+            width: 8vh;
+            margin-top: -8px;
+            
         } 
 
         a:hover{
@@ -125,13 +129,23 @@ export const Conteiner_left = styled.section`
     @media(max-width: 860px){   
         justify-content: center;
         align-items: center;
-        max-width: 100%;
+         max-width: 100%;
+        
+        h1{
+            font-size: clamp(1vw,2vw + 2vw,1.4em);
+            
+        }
+
+        p{
+            font-size: clamp(1vw,2vw + 2vw,1.4em);
+           
+        }
 
         div{
             padding-left:0px;
         }
         span{
-            font-size: clamp(1vw,5vw + 2vw,3em);
+            font-size: clamp(1vw,4.5vw + 2vw,1.3em);
         }
 
         div:nth-child(1){
@@ -142,21 +156,27 @@ export const Conteiner_left = styled.section`
             flex-wrap: wrap;
             justify-content: center;
             gap: 10px;
-            padding:10px;
+            height: auto;
+            padding: 10px;
+            margin-bottom: 40px;
+            min-width:300px ;
+            border: solid yellow 2px;
         }
         
         div:nth-child(2){
-            align-items: center;
+            align-items: start;
             justify-content:center;
-            margin-left:0px;
-            margin-top: -40px;
+            margin-bottom:50px;
+            height: auto;
+            border: solid red 2px;
           
         }
         
-        height: 50vh;
+       
      
       
     }
+
 
 
 
@@ -164,7 +184,9 @@ export const Conteiner_left = styled.section`
 
 
 export const Button = styled.button`
-    width: 200px;
+    max-width: 200px;
+    min-width:170px;
+
     height: 40px;
     border-radius: 20px;
     border:solid 3px #292929 ;
@@ -187,16 +209,18 @@ export const Conteiner_right = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
  
     img{
         height: 50vh;
         border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
     }
     @media(max-width: 860px){  
+       border: solid 1px red;
+       height: auto;
        img{
-        height: 40vh;
-        padding:10px;
+            height: auto;
+            padding:10px;
        }
    
     }
@@ -231,8 +255,8 @@ export const Span = styled.span`
         content: '';
         background: url(${props=> props.nave}) no-repeat center / cover;
         position: absolute;
-        width: 7vh;
-        height:7vh;
+        width: 8vh;
+        height:8vh;
         font-weight: 900;
         font-size: 25px;
         border-radius: 50%;
