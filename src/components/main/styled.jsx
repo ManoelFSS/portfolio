@@ -96,7 +96,7 @@ export const Conteiner_left = styled.section`
         gap: 5vh;
         width: 100%;
         height: 30vh;
-      
+        margin-top:-30px;
       
         a{
             display:flex;
@@ -130,6 +130,7 @@ export const Conteiner_left = styled.section`
         justify-content: center;
         align-items: center;
          max-width: 100%;
+         text-align: center;
         
         h1{
             font-size: clamp(1vw,2vw + 2vw,1.4em);
@@ -168,7 +169,8 @@ export const Conteiner_left = styled.section`
             justify-content:center;
             margin-bottom:50px;
             height: auto;
-            border: solid red 2px;
+            border: solid red px;
+            margin-bottom:70px;
           
         }
         
