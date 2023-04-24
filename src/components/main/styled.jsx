@@ -169,7 +169,7 @@ export const Conteiner_left = styled.section`
             justify-content:center;
             margin-bottom:50px;
             height: auto;
-            margin-bottom:70px;
+            margin-bottom:90px;
           
         }
         
