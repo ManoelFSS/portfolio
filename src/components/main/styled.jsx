@@ -248,9 +248,8 @@ export const Span = styled.span`
     position:absolute;
     top: ${props=> props.topBotto};
     transition: all 1s;
-    z-index: 9999;
     transform: translate(-50%, -50%) ;
-   z-index: 1;
+    z-index: 1;
 
     
     &::after{

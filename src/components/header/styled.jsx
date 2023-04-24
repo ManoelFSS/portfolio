@@ -51,13 +51,11 @@ export const Headers = styled.header`
         color: #FF7A00;
     }
 
-    @media(max-width: 860px){  
-     
-    }
+  
 
     @media(max-width:535px){
 
-        gap: 200px;
+        
 
         h3{
             font-size: clamp(1vw,4vw + 2vw,2em)
@@ -76,7 +74,7 @@ export const Headers = styled.header`
         }
         nav{
             display:flex;
-            width: 50%;
+            width: 46%;
             height:100vh ;
             justify-content: center ;
             padding-top: 100px;
