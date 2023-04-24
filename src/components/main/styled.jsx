@@ -217,11 +217,12 @@ export const Conteiner_right = styled.section`
         border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
     }
     @media(max-width: 860px){  
-   
+      
        height: auto;
        img{
-            height: auto;
+            height:auto;
             padding:10px;
+            
        }
    
     }
