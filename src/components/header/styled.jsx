@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const Headers = styled.header`
 
-    min-height: 10vh;
+    height: 8vh;
     width: 100%;
     display: flex;
     border-bottom: solid 2px #FF7A00;
@@ -14,16 +14,13 @@ export const Headers = styled.header`
         font-size: clamp(1vw,4vw + 2vw,3em);
         padding: 10px;
         font-family: 'Stalinist One';
-      
-      
     }
-
 
     nav {
         flex: 1;
         display: flex;
         justify-content: flex-end;
-        padding: 10px 50px;
+        padding: 10px 20px;
     }
 
     ul {
@@ -55,8 +52,6 @@ export const Headers = styled.header`
 
     @media(max-width:535px){
 
-        
-
         h3{
             font-size: clamp(1vw,4vw + 2vw,2em)
         };
@@ -71,19 +66,20 @@ export const Headers = styled.header`
             width:100%;
             justify-content: center;
             margin-top: 15px;
+            color: #000;
         }
         nav{
             display:flex;
-            width: 46%;
+            width: 42%;
             height:100vh ;
             justify-content: center ;
             padding-top: 100px;
             position: fixed;
             right:-50%;
             transition: all 0.4s;
-            box-shadow: -3px 0px 24px #000;
+            box-shadow: -3px 0px 20px #000000c1;
             top: 0;
-            background-color: #969696e1;
+            background-color: #ffffff;
             z-index: 3;
         }
     }
@@ -129,7 +125,7 @@ export const Menu = styled.span`
     width: 5vh;
     height: 5vh;
     border-radius: 50%;
-    background:#1f1f1f url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTA6Y7-IAzXhJ8Rox7Q6O6OtjHSjahCtoeNmODGITFQbwrICoL) no-repeat center / 102% 102%;
+    background:#1f1f1f url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTA6Y7-IAzXhJ8Rox7Q6O6OtjHSjahCtoeNmODGITFQbwrICoL) no-repeat center / 100% 100%;
 
     @media(max-width:535px){
         display:block;

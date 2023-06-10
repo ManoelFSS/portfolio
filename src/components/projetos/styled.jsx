@@ -1,15 +1,12 @@
 import styled from 'styled-components'
+import IconeSom from '../assets/som.png'
 
 export const Projects = styled.main`
-    
-    height: calc(100vh - 10vh);
-  
-   
 
     section{
         display: flex;
         background-color: #b65903;
-        height: 6vh;
+        height: 5vh;
         justify-content: center;
         align-items: center;
         position: relative;
@@ -28,33 +25,40 @@ export const Projects = styled.main`
     }
 `;
 
-export const Conteinner = styled.article`
+export const Conteinner_Menu = styled.aside`
     display: flex;
-    height: calc(100vh - 16vh);
-    position: relative;
+
 
     ul{
         list-style: none;
     }
 
+    .area_projetos{
+        display: flex;
+        justify-content: flex-end;
+        height: calc(100vh - 13vh);
+        width: 100vw;
+   
+    }
+
     iframe {
-        position: absolute;
-        height: 100%;
-        width: 100%;
+      position: absolute;
+      height: calc(100vh - 13vh);
+      width:100%;
     }
  
 `;
 
-export const Aside = styled.aside`
+export const Menu = styled.div`
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: ${(props)=> props.menu};
+    left: ${(props)=> props.menuLeft};
     width: 200px;
-    height:  calc(100vh - 16vh);
+    height: calc(100vh - 13vh);
     background-color: #70707073;
     z-index: 1;
     transition: all 0.4s;
@@ -72,11 +76,19 @@ export const Aside = styled.aside`
         background: #b65a03cf url(https://media.licdn.com/dms/image/C4D0BAQHdxnT1uEt__A/company-logo_200_200/0/1555610039836?e=2147483647&v=beta&t=n-dnWjg3Pw0PcR52t10yqqpYCzQ-jjv5oh6OdKTuoH0) no-repeat center right / 60px 70px;
     }
     li:nth-child(5){
-        background: #b65a03cf url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDiRY0HD_l3K2Wr7Tl-tHFHjbRjv3sf9phajH2O4FfrinI3da4) no-repeat center right / 60px 60px;
+        background: #b65a03cf url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvEnZCX91OSy44DXs6dcDC1l9Y9ON_OXkxzA&usqp=CAU) no-repeat center right / 60px 60px;
     }
 
     li:nth-child(6){
-        background: #b65a03cf url(https://i.etsystatic.com/40406947/r/il/f42e13/4525209248/il_fullxfull.4525209248_2ze5.jpg) no-repeat center right / 60px 60px;
+        background: #b65a03cf url(https://c4.wallpaperflare.com/wallpaper/276/371/674/computer-dell-wallpaper-thumb.jpg) no-repeat center right / 65px 60px;
+    }
+   
+    li:nth-child(7){
+        background: #b65a03cf url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqqSwVc3s0OgRFojxjqQu59EHt1U47fxCO-fNYFSTcXi0LRqzK73gDnW4rOJERbaoOin8&usqp=CAU) no-repeat center right / 60px 60px;
+    }
+    li:nth-child(9){
+        background: #b65a03cf url(${IconeSom}) no-repeat center right / 60px 60px ;
+    
     }
 
 `;
