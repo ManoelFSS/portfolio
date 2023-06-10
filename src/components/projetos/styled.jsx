@@ -43,7 +43,7 @@ export const Conteinner_Menu = styled.aside`
       position: absolute;
       height: calc(100vh - 100px);
       width:100%;
-      @media(min-width:670px) and (max-width:768px) {
+      @media(min-width:800px) and (max-width:860px) {
         height: 155vh;
       }
     }
