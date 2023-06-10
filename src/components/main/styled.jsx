@@ -6,7 +6,7 @@ export const Mains = styled.main`
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: calc(100vh - 8vh);
+    height: calc(100vh - 100px);
     justify-content: center;
     position: relative;
 
