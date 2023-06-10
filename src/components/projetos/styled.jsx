@@ -14,8 +14,8 @@ export const Projects = styled.main`
         div{
             position: absolute;
             left: 30px;
-            height: 4vh;
-            width: 4vh;
+            height: 30px;
+            width: 30px;
             cursor: pointer;
             border-radius: 50%;
             background: url(https://cdn-icons-png.flaticon.com/512/660/660376.png) no-repeat center / cover;
@@ -36,15 +36,15 @@ export const Conteinner_Menu = styled.aside`
         display: flex;
         justify-content: flex-end;
         width: 100vw;
-        background-color: aqua;
+
     }
 
     iframe {
       position: absolute;
-      height: calc(100vh - 100px);
+      height: calc(100vh - 130px);
       width:100%;
       @media(min-width:800px) and (max-width:860px) {
-        height: 155vh;
+        height: 150vh;
       }
     }
  
@@ -59,8 +59,6 @@ export const Menu = styled.div`
     position: absolute;
     left: ${(props)=> props.menuLeft};
     width: 200px;
-   
-    background-color: #70707073;
     z-index: 1;
     transition: all 0.4s;
 
