@@ -6,9 +6,14 @@ export const Mains = styled.main`
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
     justify-content: center;
     position: relative;
+
+    
+    @media(min-width:680px) and (max-width:680px) {
+        
+    }
 
     section{
         display: flex;
@@ -31,9 +36,14 @@ export const Container_Nave = styled.div`
     h3{
         position: absolute;
         bottom: 10px;
-        font-size: 20px;
+        font-size: 30px;
         font-weight: bolder;
+        @media(max-width:440px){
+            font-size: 20px;
+         }
     }
+
+  
 `
 
 
@@ -52,17 +62,18 @@ export const Area_title = styled.div`
 
     h1{
         font-weight: bolder;
+        font-size: 30px;
     }
     span{
         color: #b65903;
         padding-right: 20px;
-        font-size: clamp(1vw,2vw + 2vw,2em);
+        font-size: clamp(1vw,2vw + 2vw,3em);
     }
 
 
     p{
 
-        font-size: clamp(1vw,2vw + 2vw,1.8em);
+        font-size: clamp(1vw,2vw + 2vw,2.4em);
         color: #353434;
         text-transform: uppercase;
         word-spacing:15px;
@@ -77,7 +88,7 @@ export const Area_title = styled.div`
          text-align: center;
         
         h1{
-            font-size: clamp(1vw,2vw + 2vw,1.4em);
+            font-size: clamp(2vw,2vw + 2.5vw,1.5em);
             
         }
 
@@ -91,6 +102,14 @@ export const Area_title = styled.div`
             font-size: clamp(1vw,4.5vw + 2vw,1.3em);
         }
     }
+
+        @media(max-width: 480px){ 
+        
+            p{
+                font-size:14px;
+            
+            }
+        } 
 `;
 
 
@@ -180,21 +199,26 @@ export const Conteiner_right = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 300px;
 
     img{
-        height:300px;
-        width: 300px;
+        height:500px;
+        width: 500px;
         border-radius: 100%;
     }
-    @media(max-width: 860px){  
+    @media(max-width: 1154px){  
       
        img{
-            height:200px;
-            width: 200px; 
+            height:250px;
+            width: 250px; 
        }
    
     }
+    @media(max-width: 430px){ 
+        img{
+            height:240px;
+            width: 240px; 
+       }
+     }
 `;
 
 
@@ -208,17 +232,14 @@ export const Article = styled.article`
     z-index: 1;
     bottom: 0;
     color: #fff;
-
-
-
 `;
 
 export const Span = styled.span`
 
     cursor: pointer;
     background: url(${props=> props.nave}) no-repeat center / cover;
-    width: 8vh;
-    height:8vh;
+    width: 60px;
+    height:60px;
     border-radius: 50%;
     transform: ${props=> props.naveRotate};
     animation: anima 0.3s  alternate-reverse infinite;

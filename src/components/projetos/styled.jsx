@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import IconeSom from '../assets/som.png'
+import IconeSom from '../assets/orelha.png'
 
 export const Projects = styled.main`
 
