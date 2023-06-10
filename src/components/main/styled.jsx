@@ -223,12 +223,7 @@ export const Conteiner_right = styled.section`
             width: 200px; 
        }
      }
-     @media(max-width:430px){ 
-        img{
-            height:150px;
-            width: 150px; 
-       }
-     }
+  
 `;
 
 
