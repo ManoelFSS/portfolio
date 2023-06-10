@@ -16,7 +16,8 @@ const [naveRotate, setnaveRotate]= useState('rotate(0deg)')
                 <Conteiner_left>
                     <div>
                         <Area_title>
-                            <h1>OLÁ, SOU O<br/><span>MANOEL FERNANDO</span><span>:)</span></h1>
+                            <h3>OLÁ, SOU O</h3>
+                            <h1><span>MANOEL FERNANDO</span><span>:)</span></h1>
                             <p>Desenvolvedor   Front-End</p>
                         </Area_title>
                         <Area_btn>

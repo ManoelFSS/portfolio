@@ -38,7 +38,7 @@ export const Container_Nave = styled.div`
         bottom: 10px;
         font-size: 30px;
         font-weight: bolder;
-        @media(max-width:440px){
+        @media(max-width:550px){
             font-size: 20px;
          }
     }
@@ -60,6 +60,10 @@ export const Area_title = styled.div`
     flex-direction: column;
     padding: 10px;
 
+    h3{
+        font-size: 26px;
+    }
+
     h1{
         font-weight: bolder;
         font-size: 30px;
@@ -74,7 +78,7 @@ export const Area_title = styled.div`
     p{
 
         font-size: clamp(1vw,2vw + 2vw,2.4em);
-        color: #353434;
+        color: #555454;
         text-transform: uppercase;
         word-spacing:15px;
         font-weight: bolder;
@@ -119,7 +123,7 @@ export const Area_btn  = styled.section`
     display: flex;
     min-width: 100;
     gap: 20px;
-    padding: 10px 0px;
+    padding: 40px 0px;
 
 
     a{
@@ -145,7 +149,7 @@ export const Area_btn  = styled.section`
 export const Container_redeSociais = styled.section`
     display: flex;
     justify-content: space-between;
-    padding: 40px 0px;
+    padding-bottom: 66px;
     gap: 10px;
     
  a{
@@ -213,10 +217,16 @@ export const Conteiner_right = styled.section`
        }
    
     }
-    @media(max-width: 430px){ 
+    @media(max-width:694px){ 
         img{
-            height:240px;
-            width: 240px; 
+            height:200px;
+            width: 200px; 
+       }
+     }
+     @media(max-width:430px){ 
+        img{
+            height:150px;
+            width: 150px; 
        }
      }
 `;
