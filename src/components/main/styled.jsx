@@ -10,10 +10,6 @@ export const Mains = styled.main`
     justify-content: center;
     position: relative;
 
-    
-    @media(min-width:680px) and (max-width:680px) {
-        
-    }
 
     section{
         display: flex;
@@ -38,6 +34,7 @@ export const Container_Nave = styled.div`
         bottom: 10px;
         font-size: 30px;
         font-weight: bolder;
+        
         @media(max-width:550px){
             font-size: 20px;
          }
@@ -51,14 +48,12 @@ export const Conteiner_left = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-
 `;
 
 export const Area_title = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 10px;
+  
 
     h3{
         font-size: 26px;
@@ -123,7 +118,7 @@ export const Area_btn  = styled.section`
     display: flex;
     min-width: 100;
     gap: 20px;
-    padding: 40px 0px;
+    padding: 10px 0px;
 
 
     a{
@@ -149,8 +144,8 @@ export const Area_btn  = styled.section`
 export const Container_redeSociais = styled.section`
     display: flex;
     justify-content: space-between;
-    padding-bottom: 66px;
     gap: 10px;
+    padding: 20px 0px 40px 0px;
     
  a{
      display:flex;
@@ -219,8 +214,8 @@ export const Conteiner_right = styled.section`
     }
     @media(max-width:694px){ 
         img{
-            height:280px;
-            width: 280px; 
+            height:200px;
+            width: 200px; 
        }
      }
   
