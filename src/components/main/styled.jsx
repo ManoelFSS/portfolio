@@ -4,10 +4,14 @@ import styled from 'styled-components'
 export const Mains = styled.main`
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: calc(100vh - 80px);
     position: relative;
+    @media(max-width:450px){
+        justify-content: flex-start;
+    }
 
 
     section{
@@ -22,11 +26,12 @@ export const Container_Nave = styled.div`
     width: 100%;
     height: ${(props)=> props.naveMargin};
     position: absolute;
-    bottom: 0;
+    bottom:0px;
     display: flex;
     align-items: center;
     flex-direction: column;
     transition: all 1s  ;
+
 
     h3{
         position: absolute;
@@ -52,7 +57,6 @@ export const Conteiner_left = styled.section`
 export const Area_title = styled.div`
     display: flex;
     flex-direction: column;
-  
 
     h3{
         font-size: 26px;
@@ -142,22 +146,21 @@ export const Area_btn  = styled.section`
 
 export const Container_redeSociais = styled.section`
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 10px;
-    padding: 20px 0px 40px 0px;
     
  a{
      display:flex;
-     height: 5vh;
-     width: 5vh;
+     height: 30px;
+     width: 30px;
      background-color: #9e4c00;
      border-radius: 50%;
      transition: all 0.3s;
  }
 
  a:nth-child(3){
-     height: 7vh;
-     width: 7vh;
+     height: 40px;
+     width: 40px;
      margin-top: -8px;
      
  } 
@@ -213,8 +216,8 @@ export const Conteiner_right = styled.section`
     }
     @media(max-width:694px){ 
         img{
-            height:200px;
-            width: 200px; 
+            height:250px;
+            width: 250px; 
        }
      }
   

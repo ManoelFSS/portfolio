@@ -7,7 +7,7 @@ export default function Main(){
 
 const [modal, setModal] = useState('0')
 const [naveMargin, setnaveMargin] = useState('90px')
-const [topBotton, setTopBotton]= useState('0px')
+const [topBotton, setTopBotton]= useState('500px')
 const [naveRotate, setnaveRotate]= useState('rotate(0deg)')
 
     return (
@@ -47,8 +47,8 @@ const [naveRotate, setnaveRotate]= useState('rotate(0deg)')
                     topBotton={topBotton}
                     nave={nave}
                     naveRotate={naveRotate}
-                    onClick={()=> modal === '0' ? `${setnaveMargin('calc(100vh - 80px)')} ${setnaveRotate('rotate(180deg)')}   ${ setModal('calc(100vh - 80px)')}` :
-                    ` ${setnaveRotate('rotate(0deg)')}  ${setModal('0')} ${setnaveMargin('90px')}`}
+                    onClick={()=> modal === '0' ? `  ${setTopBotton('0')} ${setnaveMargin('calc(100vh - 80px)')} ${setnaveRotate('rotate(180deg)')}   ${ setModal('calc(100vh - 80px)')}` :
+                    ` ${setnaveRotate('rotate(0deg)')}  ${setModal('0')} ${setnaveMargin('90px')}  ${setTopBotton('500px')}`}
                 >
                 </Span> 
                 <h3>Sobre min</h3>
