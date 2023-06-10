@@ -2,8 +2,6 @@ import styled from 'styled-components'
 
 
 export const Headers = styled.header`
-
-    min-height: 8vh;
     width: 100%;
     display: flex;
     border-bottom: solid 2px #FF7A00;
