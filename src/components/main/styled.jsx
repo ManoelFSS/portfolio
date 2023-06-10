@@ -219,8 +219,8 @@ export const Conteiner_right = styled.section`
     }
     @media(max-width:694px){ 
         img{
-            height:200px;
-            width: 200px; 
+            height:280px;
+            width: 280px; 
        }
      }
   
