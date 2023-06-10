@@ -7,7 +7,6 @@ export const Mains = styled.main`
     align-items: center;
     width: 100%;
     height: calc(100vh - 80px);
-    justify-content: center;
     position: relative;
 
 
@@ -197,7 +196,7 @@ export const Button = styled.button`
 export const Conteiner_right = styled.section`
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 20px;
 
     img{
         height:500px;
