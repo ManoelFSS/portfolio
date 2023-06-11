@@ -10,6 +10,10 @@ export const Mains = styled.main`
     height: calc(100vh - 80px);
     position: relative;
     
+    @media(min-width:800px) and (max-width:800px){
+        height: 115vh;
+        justify-content: flex-start;
+    }
 
     @media(min-width:670px) and (max-width:670px){
         height: 115vh;
@@ -19,7 +23,6 @@ export const Mains = styled.main`
     @media(max-width:624px){
         justify-content: flex-start;
     }
-
 
     section{
         display: flex;
@@ -47,13 +50,12 @@ export const Container_Nave = styled.div`
         font-weight: bolder;
         
         @media(max-width:550px){
-            font-size: 20px;
+            font-size: 50px;
          }
     }
 
   
 `
-
 
 export const Conteiner_left = styled.section`
     display: flex;
@@ -268,9 +270,19 @@ export const Conteiner_right = styled.section`
    
     }
     @media(max-width:694px){ 
+
+        padding: 10px;
+
         img{
             height:200px;
             width: 200px; 
+       }
+     }
+
+     @media(max-width:430px){ 
+        img{
+            height:180px;
+            width: 180px; 
        }
      }
   

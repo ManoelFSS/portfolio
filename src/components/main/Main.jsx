@@ -6,7 +6,7 @@ import MF from '../assets/Manoel.jpg'
 export default function Main(){
 
 const [modal, setModal] = useState('0')
-const [naveMargin, setnaveMargin] = useState('120px')
+const [naveMargin, setnaveMargin] = useState('150px')
 const [topBotton, setTopBotton]= useState('500px')
 const [naveRotate, setnaveRotate]= useState('rotate(0deg)')
 
@@ -48,7 +48,7 @@ const [naveRotate, setnaveRotate]= useState('rotate(0deg)')
                     nave={nave}
                     naveRotate={naveRotate}
                     onClick={()=> modal === '0' ? `  ${setTopBotton('0')} ${setnaveMargin('calc(100vh - 80px)')} ${setnaveRotate('rotate(180deg)')}   ${ setModal('calc(100vh - 80px)')}` :
-                    ` ${setnaveRotate('rotate(0deg)')}  ${setModal('0')} ${setnaveMargin('120px')}  ${setTopBotton('500px')}`}
+                    ` ${setnaveRotate('rotate(0deg)')}  ${setModal('0')} ${setnaveMargin('150px')}  ${setTopBotton('500px')}`}
                 >
                 </Span> 
                 <h3>Sobre min</h3>
