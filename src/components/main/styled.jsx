@@ -45,12 +45,12 @@ export const Container_Nave = styled.div`
 
     h3{
         position: absolute;
-        bottom: 40px;
+        bottom: 70px;
         font-size: 30px;
         font-weight: bolder;
         
         @media(max-width:550px){
-            font-size: 50px;
+            font-size: 24px;
          }
     }
 
