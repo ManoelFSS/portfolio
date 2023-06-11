@@ -9,6 +9,7 @@ export const Mains = styled.main`
     width: 100%;
     height: calc(100vh - 80px);
     position: relative;
+    
 
     @media(min-width:670px) and (max-width:670px){
         height: 115vh;
@@ -41,7 +42,7 @@ export const Container_Nave = styled.div`
 
     h3{
         position: absolute;
-        bottom: 10px;
+        bottom: 40px;
         font-size: 30px;
         font-weight: bolder;
         
