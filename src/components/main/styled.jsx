@@ -9,7 +9,13 @@ export const Mains = styled.main`
     width: 100%;
     height: calc(100vh - 80px);
     position: relative;
-    @media(max-width:450px){
+
+    @media(min-width:670px) and (max-width:670px){
+        height: 115vh;
+        justify-content: flex-start;
+    }
+
+    @media(max-width:624px){
         justify-content: flex-start;
     }
 
@@ -59,7 +65,7 @@ export const Area_title = styled.div`
     flex-direction: column;
 
     h3{
-        font-size: 26px;
+        font-size: 30px;
     }
 
     h1{
@@ -68,7 +74,7 @@ export const Area_title = styled.div`
     }
     span{
         color: #b65903;
-        padding-right: 20px;
+        padding-right: 10px;
         font-size: clamp(1vw,2vw + 2vw,3em);
     }
 
@@ -78,7 +84,7 @@ export const Area_title = styled.div`
         font-size: clamp(1vw,2vw + 2vw,2.4em);
         color: #555454;
         text-transform: uppercase;
-        word-spacing:15px;
+        word-spacing:10px;
         font-weight: bolder;
      
     }
@@ -105,13 +111,16 @@ export const Area_title = styled.div`
         }
     }
 
-        @media(max-width: 480px){ 
-        
-            p{
-                font-size:14px;
-            
-            }
-        } 
+    @media(max-width: 480px){ 
+    
+        p{
+            font-size:14px;
+        }
+    } 
+
+    @media(max-width:624px){
+        text-align: center;
+    }
 `;
 
 
@@ -121,7 +130,11 @@ export const Area_btn  = styled.section`
     display: flex;
     min-width: 100;
     gap: 20px;
-    padding: 10px 0px;
+    padding: 20px 0px;
+
+    @media(max-width:670px){
+        padding: 10px;
+    }
 
 
     a{
@@ -129,65 +142,104 @@ export const Area_btn  = styled.section`
         justify-content: center;
         align-items: center;
         max-width: 200px;
-        min-width:170px;
-        height: 40px;
+        min-width:180px;
+        height: 50px;
         border:solid 1px #b65903 ;
         background-color: #b65903;
         border-radius: 20px;
         color: #fff;
         font-weight: bolder;
         transition: all 0.3s;
+        @media(max-width:379px){
+            height: 40px;
+        }
     }
     a:hover{
         background-color: #9e4c00;
         border:solid 1px #9e4c00 ;
     }
+   
 `;
 
 export const Container_redeSociais = styled.section`
     display: flex;
     justify-content: center;
     gap: 10px;
-    
- a{
-     display:flex;
-     height: 30px;
-     width: 30px;
-     background-color: #9e4c00;
-     border-radius: 50%;
-     transition: all 0.3s;
- }
+    padding: 20px;
 
- a:nth-child(3){
-     height: 40px;
-     width: 40px;
-     margin-top: -8px;
-     
- } 
+    @media(max-width:670px){
+        padding: 10px;
+    }
+        
+    a{
+        display:flex;
+        height: 50px;
+        width: 50px;
+        background-color: #9e4c00;
+        border-radius: 50%;
+        transition: all 0.3s;
 
- a:hover{
-     transform: scale(1.1);
- }
+        @media(max-width:670px){
+            height: 30px;
+            width: 30px;
+        }
 
- a img{
-     width: 100%;
-     height: 100%;
-     border-radius: 50%;
- }
+        @media(max-width:379px){
+            height: 30px;
+        }
+        @media(max-width:340px){
+            height: 30px;
+            width: 30px;
+        }
+    }
 
-`
+    a:nth-child(3){
+        height: 60px;
+        width: 60px;
+        margin-top: -10px;
+        @media(max-width:670px){
+            height: 40px;
+            width: 40px;
+        }
+        
+        @media(max-width:379px){
+            height: 40px;
+        }
+
+        @media(max-width:340px){
+            height: 40px;
+            width: 40px;
+        }
+        
+    } 
+
+    a:hover{
+        transform: scale(1.1);
+    }
+
+    a img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+`;
 
 export const Button = styled.button`
 
     max-width: 200px;
-    min-width:170px;
-    height: 40px;
+    min-width:180px;
+    height: 50px;
     border-radius: 20px;
     border:solid 3px #292929 ;
     background-color:#383838;
     color:#fff;
     font-weight: bolder;
     transition: all 0.3s;
+
+    @media(max-width:379px){
+        height: 40px;
+    }
 
     &:hover{
         border:solid 3px #686868 ;
@@ -216,8 +268,8 @@ export const Conteiner_right = styled.section`
     }
     @media(max-width:694px){ 
         img{
-            height:250px;
-            width: 250px; 
+            height:200px;
+            width: 200px; 
        }
      }
   
