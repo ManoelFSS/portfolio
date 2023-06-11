@@ -60,12 +60,12 @@ export const Area_form = styled.div`
 
         @media(max-width:620px){
             width: 350px;
-            height:400px;
+            height:600px;
         }
         
         @media(max-width:375px){
             width:290px;
-            height:500px;
+           
         }
 
         div{
