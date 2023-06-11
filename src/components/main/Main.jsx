@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {Mains,Conteiner_left, Conteiner_right, Button, Article, Span, Container_Nave, Container_redeSociais, Area_btn, Area_title} from './styled'
+import {Mains,Conteiner_left, Conteiner_right, Button, Area_form, Article, Span, Container_Nave, Container_redeSociais, Area_btn, Area_title} from './styled'
 import nave from '../assets/nave.png'
 import MF from '../assets/Manoel.jpg'
 
@@ -9,6 +9,7 @@ const [modal, setModal] = useState('0')
 const [naveMargin, setnaveMargin] = useState('150px')
 const [topBotton, setTopBotton]= useState('500px')
 const [naveRotate, setnaveRotate]= useState('rotate(0deg)')
+const [modelContato, setmodelContato]= useState('none')
 
     return (
         <Mains>
@@ -22,7 +23,7 @@ const [naveRotate, setnaveRotate]= useState('rotate(0deg)')
                         </Area_title>
                         <Area_btn>
                             <a>DOWLOADR  CV</a>
-                            <Button >
+                            <Button onClick={()=> setmodelContato('flex') }>
                                 CONTATO
                             </Button>
                         </Area_btn>
@@ -39,6 +40,29 @@ const [naveRotate, setnaveRotate]= useState('rotate(0deg)')
                     <img src={MF} alt="Manoel" />
                 </Conteiner_right>
             </section>
+            <Area_form modelContato={modelContato} >
+                <form action="#" className='formulario'>
+                    <div>
+                        <label htmlFor="">Nome</label>
+                        <input type="text" placeholder='Digite seu nome' />
+                    </div>
+                    <div>
+                        <label htmlFor="">Email</label>
+                        <input type="text" placeholder='Digite seu Email' />
+                    </div>
+                    <div>
+                        <label htmlFor="">Celular</label>
+                        <input type="number" placeholder='(dd)90000-0000' />                   
+                    </div>
+                    <div>
+                        <input type="submit" value={'Enviar'} className='form_btn'/>
+                    </div>
+                    <p onClick={()=> setmodelContato('none') }>
+                        Voltar
+                    </p>
+                </form>
+                
+            </Area_form>
             <Article modal={modal}>
            
             </Article>

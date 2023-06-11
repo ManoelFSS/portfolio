@@ -29,7 +29,100 @@ export const Mains = styled.main`
         justify-content: center;
         flex-wrap: wrap-reverse;
     }
+
  
+`;
+
+export const Area_form = styled.div`
+    display:${props => props.modelContato};
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 4;
+    border: solid 1px red;
+    transition: all 0.4s;
+
+
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 600px;
+        height: 600px;
+        background-color:  #b65903;
+        border-radius: 40px;
+        padding: 20px;
+        box-shadow: 3px 6px 20px 1px #000000a2;
+
+        @media(max-width:620px){
+            width: 350px;
+            height:400px;
+        }
+        
+        @media(max-width:375px){
+            width:290px;
+            height:500px;
+        }
+
+        div{
+            padding: 10px;
+        }
+
+        input{
+            width: 300px;
+            height: 50px;
+            display: block;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            padding: 4px 8px 4px 8px;
+            box-shadow:  inset 3px 6px 20px 1px #0000007f;
+
+            @media(max-width:620px){
+                width: 250px;
+               
+            }
+        }
+
+        input::placeholder{
+            font-size: 1.2rem;
+        }
+
+        label {
+           display: block;
+           width: 80px;
+           padding: 5px 0px 5px 0px;
+           font-size: 24px;
+           font-weight: bold;
+           color: #ffffff;
+           border-bottom: solid 4px #000;
+           margin-bottom: 10px;
+        }
+
+        .form_btn{
+            margin-top: 20px;
+            background-color: #000;
+            color: #ffffff;
+            box-shadow: 3px 6px 20px 1px #000000cf;
+            cursor: pointer;
+        }
+
+       p{
+           margin-top:20px;
+           font-size: 22px;
+           font-weight: bold;
+           transition: all 0.3s;
+           color: #000;
+        }
+        p:hover{
+            color: red;
+            cursor: pointer;
+        }
+    }
 `;
 
 export const Container_Nave = styled.div`
@@ -153,6 +246,7 @@ export const Area_btn  = styled.section`
         color: #fff;
         font-weight: bolder;
         transition: all 0.3s;
+        cursor: pointer;
         @media(max-width:379px){
             height: 40px;
         }
@@ -239,6 +333,7 @@ export const Button = styled.button`
     color:#fff;
     font-weight: bolder;
     transition: all 0.3s;
+    cursor: pointer;
 
     @media(max-width:379px){
         height: 40px;
