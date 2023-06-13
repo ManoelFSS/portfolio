@@ -16,7 +16,7 @@ export const Mains = styled.main`
     }
 
     @media(min-width:670px) and (max-width:670px){
-        height: 115vh;
+        height:115vh;
         justify-content: flex-start;
     }
 
@@ -399,14 +399,14 @@ export const Article = styled.article`
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    padding: 20px;
+
 
     section{
         display: block;
     }
 
     h3{
-        padding: 20px 0px ;
+        padding: 20px 20px ;
         font-size:35px;
         color:#b65903 ;
         @media(max-width:650px){
@@ -417,12 +417,13 @@ export const Article = styled.article`
     p{
         max-width: 700px;
         font-size:22px;
+        padding: 0px 20px ;
         @media(max-width:650px){
            font-size: 16px;
            line-height: 18px;
         }
         @media(max-width:430px){
-           font-size: 13px;
+           font-size: 12px;
            line-height: 18px;
         }
     }

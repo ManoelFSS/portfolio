@@ -16,7 +16,7 @@ import Styledcss from '../assets/styled.jfif'
 
 export default function Main(){
 
-const [modal, setModal] = useState('0')
+const [modal, setModal] = useState('0px')
 const [naveMargin, setnaveMargin] = useState('150px')
 const [topBotton, setTopBotton]= useState('500px')
 const [naveRotate, setnaveRotate]= useState('rotate(0deg)')
