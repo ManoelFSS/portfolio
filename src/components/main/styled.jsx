@@ -386,7 +386,6 @@ export const Conteiner_right = styled.section`
 
 export const Article = styled.article`
     position:absolute;
-    bottom:0px;
     width: 100%;
     height: ${(props)=> props.modal};
     background: #3a3a3a url(https://i.ytimg.com/vi/DRSbkYryPhA/maxresdefault.jpg) no-repeat center / cover;
@@ -399,6 +398,7 @@ export const Article = styled.article`
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    overflow:scroll;
 
 
     section{
