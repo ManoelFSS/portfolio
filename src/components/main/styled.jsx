@@ -394,20 +394,74 @@ export const Article = styled.article`
     z-index: 1;
     bottom: 0;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px;
 
-    div{
-        flex: 1;
-        max-width: 310px ;
-        display: flex;
-        flex-wrap: wrap;
-
+    section{
+        display: block;
     }
 
-    .skills img{
-        width: 100px;
-        height: 100px;
+    h3{
+        padding: 10px 0px ;
+        font-size:25px;
+    }
+
+    p{
+        max-width: 700px;
+        font-size:22px;
+        @media(max-width:650px){
+           font-size: 16px;
+           line-height: 18px;
+        }
+        @media(max-width:430px){
+           font-size: 11px;
+           line-height: 18px;
+        }
+    }
+
+    h4{
+     
+        padding: 10px 20px;
+        font-size: 25px;
+    }
+     
+    img{
+        width: 80px;
+        height: 80px;
         border-radius: 50%;
+        @media(max-width:569px){
+            width: 70px;
+            height: 70px;;
+        }
+        @media(max-width:569px){
+            width: 60px;
+            height: 60px;;
+        }
+      
     }
+    div{
+        display: block;
+        max-width: 700px;
+    }
+
+    .container_img{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        min-width: 300px;
+        gap: 30px;
+        padding: 10px;
+        z-index:-2;
+        @media(max-width:361px){
+          gap: 20px;
+        }
+    }
+    
+
 `;
 
 export const Span = styled.span`

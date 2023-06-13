@@ -76,13 +76,12 @@ const [modelContato, setmodelContato]= useState('none')
             </Area_form>
             <Article modal={modal}>
                 <section>
-
+                    <h3>Sobre</h3>
+                    <p>Meu nome é Manoel Fernando e sou um programador front-end iniciante apaixonado por tecnologia e novos desafios. Com um interesse duradouro pela área, decidi criar meu primeiro portfolio para compartilhar meus projetos. estou constantemente aprimorando minhas habilidades. Estou entusiasmado para enfrentar novos desafios e buscar oportunidades de aprendizado e crescimento. Estou aberto a colaborar com profissionais talentosos e criativos em projetos desafiadores e inovadores. Com uma mentalidade de constante evolução, estou determinado a contribuir para o mundo da tecnologia e fazer a diferença na área de programação front-end.</p>
                 </section>
-                <section className='skills'>
-                    <div>
-                        <h3>Skills</h3>
-                    </div>
-                    <div>
+                <div>
+                    <h4>SKILLS</h4>
+                    <div className='container_img'>
                         <img src={Html} alt={""} />
                         <img src={Css} alt={""} />
                         <img src={Js} alt={""} />
@@ -93,7 +92,7 @@ const [modelContato, setmodelContato]= useState('none')
                         <img src={Vscode} alt={""} />
                         <img src={Styledcss} alt={""} />
                     </div>
-                </section>
+                </div>
             </Article>
             <Container_Nave naveMargin={naveMargin} >
                 <Span 
