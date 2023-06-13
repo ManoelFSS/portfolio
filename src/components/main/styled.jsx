@@ -394,6 +394,20 @@ export const Article = styled.article`
     z-index: 1;
     bottom: 0;
     color: #fff;
+
+    div{
+        flex: 1;
+        max-width: 310px ;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .skills img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
 `;
 
 export const Span = styled.span`

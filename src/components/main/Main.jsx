@@ -2,6 +2,17 @@ import React, {useState} from 'react'
 import {Mains,Conteiner_left, Conteiner_right, Button, Area_form, Article, Span, Container_Nave, Container_redeSociais, Area_btn, Area_title} from './styled'
 import nave from '../assets/nave.png'
 import MF from '../assets/Manoel.jpg'
+import Js from '../assets/javascript.png'
+import Html from '../assets/html.png'
+import Css from '../assets/css.png'
+import Git from '../assets/git.png'
+import Reactjs from '../assets/react1.png'
+import Githube from '../assets/githube.png'
+import Vscode from '../assets/vscode0.png'
+import Figma from '../assets/figma.png'
+import Styledcss from '../assets/styled.jfif'
+
+
 
 export default function Main(){
 
@@ -44,15 +55,15 @@ const [modelContato, setmodelContato]= useState('none')
                 <form action="#" className='formulario'>
                     <div>
                         <label htmlFor="">Nome</label>
-                        <input type="text" placeholder='Digite seu nome' />
+                        <input type="text" placeholder='Digite seu nome' required />
                     </div>
                     <div>
                         <label htmlFor="">Email</label>
-                        <input type="text" placeholder='Digite seu Email' />
+                        <input type="text" placeholder='Digite seu Email' required />
                     </div>
                     <div>
                         <label htmlFor="">Celular</label>
-                        <input type="number" placeholder='(dd)90000-0000' />                   
+                        <input type="number" placeholder='(DD)90000-0000' required />                   
                     </div>
                     <div>
                         <input type="submit" value={'Enviar'} className='form_btn'/>
@@ -64,7 +75,25 @@ const [modelContato, setmodelContato]= useState('none')
                 
             </Area_form>
             <Article modal={modal}>
-           
+                <section>
+
+                </section>
+                <section className='skills'>
+                    <div>
+                        <h3>Skills</h3>
+                    </div>
+                    <div>
+                        <img src={Html} alt={""} />
+                        <img src={Css} alt={""} />
+                        <img src={Js} alt={""} />
+                        <img src={Reactjs} alt={""} />
+                        <img src={Git} alt={""} />
+                        <img src={Githube} alt={""} />
+                        <img src={Figma} alt={""} />
+                        <img src={Vscode} alt={""} />
+                        <img src={Styledcss} alt={""} />
+                    </div>
+                </section>
             </Article>
             <Container_Nave naveMargin={naveMargin} >
                 <Span 
