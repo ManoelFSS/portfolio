@@ -406,8 +406,12 @@ export const Article = styled.article`
     }
 
     h3{
-        padding: 10px 0px ;
-        font-size:25px;
+        padding: 20px 0px ;
+        font-size:35px;
+        color:#b65903 ;
+        @media(max-width:650px){
+          font-size: 25px;
+        }
     }
 
     p{
@@ -424,9 +428,13 @@ export const Article = styled.article`
     }
 
     h4{
-     
-        padding: 10px 20px;
-        font-size: 25px;
+        padding: 20px 20px;
+        font-size: 35px;
+        text-align: center;
+        color:#b65903 ;
+        @media(max-width:650px){
+          font-size: 25px;
+        }
     }
      
     img{
