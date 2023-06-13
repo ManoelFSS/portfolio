@@ -422,7 +422,7 @@ export const Article = styled.article`
            line-height: 18px;
         }
         @media(max-width:430px){
-           font-size: 11px;
+           font-size: 13px;
            line-height: 18px;
         }
     }
